@@ -45,14 +45,10 @@ body p, body h2{
     padding: 8px 0;
 }
 #carouselExampleIndicators .carousel-inner h5, #carouselExampleIndicators .carousel-inner p{
-    color:rgb(54, 58, 58);
+    color:rgb(227, 175, 29);
     font-weight: bold
 }
 
-#carouselExampleIndicators .carousel-caption{
-    background-color: rgba(204,204,204,0.85);
-    border-radius: 50px
-}
 .seriy{
     background-color: lightgray;
     padding: 7px;
