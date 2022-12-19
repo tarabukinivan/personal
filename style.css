@@ -2,7 +2,7 @@ html, body{
     color: #f2f2f2 !important;
     height: 100% !important;
     background-color: rgb(54, 58, 58) !important;
-    font-family: Roboto;
+    font-family: Roboto !important;
 }
 .navbar .navbar-brand{
     color: blueviolet !important;
