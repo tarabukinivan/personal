@@ -31,6 +31,12 @@ body p, body h2{
 }
 .testnet.about img{
     margin: 30px 0;
+    transition: border-width 0.3s linear;
+}
+.testnet.about img:hover{
+    border-width: 0 10px;
+    border-color: #f2f2f2;
+    border-style: double;
 }
 .brd{
     border: 0px solid #f4f4f4;
