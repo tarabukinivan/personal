@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="600" viewBox="0 0 1600 600">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f1226"/>
+      <stop offset="0.55" stop-color="#171a3a"/>
+      <stop offset="1" stop-color="#251a4d"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.78" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="600" fill="url(#bg)"/>
+  <rect width="1600" height="600" fill="url(#glow)"/>
+  <g stroke="#8b5cf6" stroke-opacity="0.12" stroke-width="1">
+    <path d="M0 100 H1600 M0 200 H1600 M0 300 H1600 M0 400 H1600 M0 500 H1600"/>
+    <path d="M200 0 V600 M400 0 V600 M600 0 V600 M800 0 V600 M1000 0 V600 M1200 0 V600 M1400 0 V600"/>
+  </g>
+
+  <!-- network graph -->
+  <g transform="translate(1050,300)">
+    <g stroke="url(#accent)" stroke-opacity="0.7" stroke-width="2.5" fill="none">
+      <line x1="0" y1="0" x2="180" y2="-140"/>
+      <line x1="0" y1="0" x2="200" y2="20"/>
+      <line x1="0" y1="0" x2="120" y2="150"/>
+      <line x1="0" y1="0" x2="-190" y2="-90"/>
+      <line x1="0" y1="0" x2="-150" y2="140"/>
+      <line x1="180" y1="-140" x2="200" y2="20"/>
+      <line x1="-190" y1="-90" x2="180" y2="-140"/>
+      <line x1="-150" y1="140" x2="120" y2="150"/>
+    </g>
+    <circle cx="180" cy="-140" r="16" fill="#22d3ee"/>
+    <circle cx="200" cy="20" r="22" fill="#8b5cf6"/>
+    <circle cx="120" cy="150" r="14" fill="#22d3ee"/>
+    <circle cx="-190" cy="-90" r="14" fill="#8b5cf6"/>
+    <circle cx="-150" cy="140" r="18" fill="#22d3ee"/>
+    <circle cx="0" cy="0" r="34" fill="#0f1226" stroke="url(#accent)" stroke-width="4"/>
+    <circle cx="0" cy="0" r="10" fill="#f2f2f2"/>
+  </g>
+
+  <!-- text block -->
+  <g transform="translate(110,300)" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+    <rect x="0" y="-158" width="150" height="34" rx="17" fill="#8b5cf6" fill-opacity="0.18" stroke="#8b5cf6" stroke-opacity="0.6"/>
+    <text x="75" y="-135" text-anchor="middle" fill="#c4b5fd" font-size="16" letter-spacing="2">EXPERTISE</text>
+    <text x="0" y="-60" fill="#ffffff" font-size="56" font-weight="700">Validator &amp; Node Operator</text>
+    <rect x="0" y="-30" width="520" height="5" rx="2.5" fill="url(#accent)"/>
+    <text x="0" y="30" fill="#cbd5e1" font-size="24">6 years of running consensus-critical infrastructure</text>
+    <text x="0" y="68" fill="#94a3b8" font-size="20">Cosmos SDK · Ethereum ecosystems · PoS networks</text>
+    <g transform="translate(0,120)" fill="#e2e8f0" font-size="19">
+      <text x="0" y="0">✓ 99.9% uptime &amp; slashing protection</text>
+      <text x="0" y="38">✓ 40+ networks validated and testnet-pioneered</text>
+    </g>
+  </g>
+</svg>

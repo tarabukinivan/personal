@@ -2,174 +2,251 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TarabukinIvan</title>
+    <title>Ivan Tarabukin — Validator, Node Operator &amp; Full-Stack Developer</title>
+    <meta name="description" content="Independent validator, node operator and full-stack developer. 6 years of validation, 8+ years in ambassador programs, 18+ years of development. Snapshots, explorers and bots.">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="icon" href="https://raw.githubusercontent.com/tarabukinivan/personal/main/favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div class="main">
-        <div class="mainmenu">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <a class="navbar-brand" href="#">TI</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
-                        </li>                    
-                        <li class="nav-item">
-                            <a class="nav-link" href="#mainet">Mainnet</a>                           
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#testnet">Active testnet</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#testnetold">Archive</a>
-                        </li>
-                    </ul>
-                    </div>
-                </nav>
-            </div>
+    <header class="navbar">
+        <div class="container nav-inner">
+            <a class="brand" href="#">
+                <span class="brand-logo">TI</span>
+                <span class="brand-name">Ivan&nbsp;Tarabukin</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-links" id="navLinks">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#mainnet">Mainnet</a>
+                <a href="#testnet">Testnet</a>
+                <a href="#archive">Archive</a>
+                <a href="#contact" class="nav-cta">Contact</a>
+            </nav>
         </div>
-        <div class="beforemenu"></div>
-        <div class="container">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img class="d-block w-100" src="img/cosmos.png" alt="node">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Validator experience</h5>
-                        <p>6 years of experience</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="img/amba.png" alt="amba">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Experience in ambassadorship and retroactive airdrops</h5>
-                        <p>More than 8 years.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="img/devp.png" alt="Third slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Programming experience. Website development, etc.</h5>
-                        <p>More than 18 years.</p>
-                    </div>
-                  </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-photo">
+                    <img src="img/avatar.jpg" alt="Ivan Tarabukin" loading="eager">
+                    <span class="hero-badge">● Available for new networks</span>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
+                <div class="hero-text">
+                    <span class="hero-kicker">Independent validator · Node operator · Developer</span>
+                    <h1>Reliable infrastructure for<br><span class="grad">PoS networks</span></h1>
+                    <p class="lead">Running consensus-critical nodes since 2019. Building snapshots, explorers
+                        and monitoring bots so the community can follow along. Team of 3 professionals
+                        focused on validation and mining.</p>
+                    <div class="hero-actions">
+                        <a href="#services" class="btn btn-primary">Our services</a>
+                        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+                    </div>
+                    <ul class="hero-socials">
+                        <li><a href="https://t.me/tarabukinivan" target="_blank" rel="noopener">Telegram</a></li>
+                        <li><a href="https://twitter.com/qjtze9GsNnNwHjO" target="_blank" rel="noopener">Twitter</a></li>
+                        <li><a href="https://tarabukinivan.medium.com/" target="_blank" rel="noopener">Medium</a></li>
+                        <li><a href="https://github.com/tarabukinivan" target="_blank" rel="noopener">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container stats-row">
+                <div class="stat"><span class="stat-num">6</span><span class="stat-label">years validating</span></div>
+                <div class="stat"><span class="stat-num">40+</span><span class="stat-label">networks run</span></div>
+                <div class="stat"><span class="stat-num">8+</span><span class="stat-label">years ambassador</span></div>
+                <div class="stat"><span class="stat-num">18+</span><span class="stat-label">years coding</span></div>
+                <div class="stat"><span class="stat-num">3</span><span class="stat-label">people in team</span></div>
+            </div>
+        </section>
+
+        <!-- CAROUSEL -->
+        <section class="carousel-section container">
+            <div class="carousel" id="carousel">
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="carousel-slide">
+                        <img src="img/banners/banner-validator.svg" alt="Validator and node operator expertise" loading="eager">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/banners/banner-ambassador.svg" alt="Ambassador and community expertise" loading="lazy">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/banners/banner-dev.svg" alt="Full-stack development expertise" loading="lazy">
+                    </div>
+                </div>
+                <div class="carousel-dots" id="carouselDots">
+                    <button class="active" aria-label="Slide 1"></button>
+                    <button aria-label="Slide 2"></button>
+                    <button aria-label="Slide 3"></button>
+                </div>
+                <button class="carousel-arrow prev" id="carouselPrev" aria-label="Previous slide">&#8592;</button>
+                <button class="carousel-arrow next" id="carouselNext" aria-label="Next slide">&#8594;</button>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about container" id="about">
+            <h2 class="section-title">About <span class="grad">me</span></h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>Profile</h3>
+                    <ul class="profile-list">
+                        <li><span>Age</span><b>37</b></li>
+                        <li><span>Education</span><b>Mathematician, Systems Programmer</b></li>
+                        <li><span>Languages</span><b>PHP · JS · Python · basics of Solidity</b></li>
+                        <li><span>Stack</span><b>Smart contracts (ERC20, Aptos), graphic &amp; video editors</b></li>
+                    </ul>
+                </div>
+                <div class="about-card">
+                    <h3>Story</h3>
+                    <p>I started as a college instructor, worked as a system administrator for 10 years,
+                        and simultaneously developed websites, bots and services as a freelancer.</p>
+                    <p>I became interested in crypto in 2017 — token sales, ambassador programs, trading.
+                        Since 2019 I've been focused on nodes and validation, while staying active in
+                        selected ambassador programs.</p>
+                    <p>Our team of 3 people is professionally engaged in validation and mining.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section class="services container" id="services">
+            <h2 class="section-title">Services &amp; <span class="grad">tools</span></h2>
+            <div class="services-grid">
+                <a class="service-card" href="https://snapshots.tarabukin.work/" target="_blank" rel="noopener">
+                    <div class="service-icon">⬇</div>
+                    <h3>Snapshots</h3>
+                    <p>Fresh node snapshots for fast sync across supported networks.</p>
+                    <span class="service-link">snapshots.tarabukin.work →</span>
                 </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
+                <a class="service-card" href="https://explorer.tarabukin.work/" target="_blank" rel="noopener">
+                    <div class="service-icon">🔍</div>
+                    <h3>Explorers</h3>
+                    <p>Own block explorers with validator stats and real-time monitoring.</p>
+                    <span class="service-link">explorer.tarabukin.work →</span>
+                </a>
+                <a class="service-card" href="https://t.me/story_network_bot" target="_blank" rel="noopener">
+                    <div class="service-icon">🤖</div>
+                    <h3>Bots</h3>
+                    <p>Telegram bots for tracking, alerts and network stats.</p>
+                    <span class="service-link">@story_network_bot →</span>
                 </a>
             </div>
-            <div class="about">
-                <h2>About me</h2>
-            <p><b>Age:</b> 37 years</p>
-            <p><b>Education:</b> Mathematician, Systems Programmer</p>
-            <p>Our team consists of 3 people.<br>We are professionally engaged in validation and mining. <b>About Myself:</b> I started as a college instructor, worked as a system administrator for 10 years, and simultaneously developed websites, bots, etc., as a freelancer. I became interested in crypto in 2017, participated in token sales, ambassador programs, and trading. Since 2019, I've been interested in nodes, but I also continue to participate in some ambassador programs. I am familiar with graphic and video editors, several programming languages such as PHP, JS, Python, various frameworks, and have basic knowledge of Solidity. I have worked with smart contracts like ERC20 and Aptos.</p>
-            <p>Discord: mr#9464</p>
-            <p>Telegram: @tarabukinivan</p>
-            <p>Twitter: https://twitter.com/qjtze9GsNnNwHjO</p>
-            <p>Medium: https://tarabukinivan.medium.com/</p>
-            <p>Github: https://github.com/tarabukinivan</p>
-                <h3>Services</h3>
-                <p>Snapshots</p>
-                <a href="https://snapshots.tarabukin.work/">Snapshots Story</a>
-                <p>Explorers</p>
-                <a href="https://explorer.tarabukin.work/">Explorer</a>
-                <p>Bots</p>
-                <a href="@story_network_bot">Story bot</a>
+        </section>
+
+        <!-- MAINNET -->
+        <section class="container section" id="mainnet">
+            <h2 class="section-title">Mainnet <span class="grad">nodes</span></h2>
+            <div class="node-grid">
+                <div class="node-card"><a href="https://explorer.stavr.tech/Gitopia-M/staking/gitopiavaloper1ls7r9q6afdffj04a6j8e8lle04tr8yz9x9lr7t" target="_blank" rel="noopener"><span><img src="img/gitopia.png" alt="Gitopia" loading="lazy"></span><em>Gitopia</em></a></div>
+                <div class="node-card"><a href="https://haqq.explorers.guru/validator/haqqvaloper1xwpeshg6v7fdg55evd9pzlay22a407dnxaat00" target="_blank" rel="noopener"><span><img src="img/HAQQ.png" alt="HAQQ" loading="lazy"></span><em>HAQQ</em></a></div>
+                <div class="node-card"><a href="https://explorer.stavr.tech/Entangle-Mainnet/staking/entvaloper1ckwptw2zq6p0w80jl2tjzlwf2d55j3586ggt7z" target="_blank" rel="noopener"><span><img src="img/Entangle.png" alt="Entangle" loading="lazy"></span><em>Entangle</em></a></div>
+                <div class="node-card"><a href="https://explorer.stavr.tech/Arkh-Mainnet/staking/arkhvaloper1a5225npq48qd64ahtl7xtzunru54w8zjraqnks" target="_blank" rel="noopener"><span><img src="img/arkh.png" alt="Arkh" loading="lazy"></span><em>Arkh</em></a></div>
+                <div class="node-card"><a href="https://explorer.stavr.tech/Sge-Mainnet/staking/sgevaloper1m8mhgf0x5kt4hn80dr2vxta0j8u082gawnt2cx" target="_blank" rel="noopener"><span><img src="img/sge.png" alt="SGE" loading="lazy"></span><em>SGE</em></a></div>
+                <div class="node-card"><a href="https://ping.blockxnet.com/blockx/staking/blockxvaloper1lq50d07fwv9xwr80agj7t9juul2vxdtz9wte72" target="_blank" rel="noopener"><span><img src="img/blockX.png" alt="BlockX" loading="lazy"></span><em>BlockX</em></a></div>
+                <div class="node-card"><a href="https://voirewards.com/wallet/QS2HU3VDOZYJUQVWAAQF2MICRZ4QPRI6IG3AQYP2IHMPHR2LGOJBQIZSEI" target="_blank" rel="noopener"><span><img src="img/voi.png" alt="Voi" loading="lazy"></span><em>Voi</em></a></div>
+                <div class="node-card"><a href="https://massexplo.io/address/AU12LNmP5socTMuDeZjoqfH1dX7go1EoQhLsXTnecWpJXQKnEGxoN" target="_blank" rel="noopener"><span><img src="img/massa.png" alt="Massa" loading="lazy"></span><em>Massa</em></a></div>
+                <div class="node-card"><a href="https://nodes.sanr.network/" target="_blank" rel="noopener"><span><img src="img/santiment.png" alt="Santiment" loading="lazy"></span><em>Santiment</em></a></div>
+                <div class="node-card"><span><img src="img/nym.png" alt="Nym" loading="lazy"></span><em>Nym</em></div>
+                <div class="node-card"><span><img src="img/humanode.png" alt="Humanode" loading="lazy"></span><em>Humanode</em></div>
+                <div class="node-card"><span><img src="img/minim.png" alt="Minima" loading="lazy"></span><em>Minima</em></div>
             </div>
+        </section>
+
+        <!-- TESTNET -->
+        <section class="container section" id="testnet">
+            <h2 class="section-title">Active <span class="grad">testnets</span></h2>
+            <div class="node-grid">
+                <div class="node-card"><a href="https://explorer.stavr.tech/Ojo-Devnet/staking/ojovaloper1grg7z678w6lwh9s30l8z07j0u0xuckrhmqthxx" target="_blank" rel="noopener"><span><img src="img/ojo.png" alt="Ojo" loading="lazy"></span><em>Ojo</em></a></div>
+                <div class="node-card"><a href="http://65.108.10.239:3000/d/af04c037-bd8f-484a-b93e-0cb4b7d3b026/hubble-dashboard?orgId=1&refresh=30s" target="_blank" rel="noopener"><span><img src="img/farcaster.png" alt="Farcaster" loading="lazy"></span><em>Farcaster</em></a></div>
+                <div class="node-card"><a href="https://exp.utsa.tech/empeiria-test/staking/empevaloper1ggpm445ypks9njzuqqzz66kqh6hr9a8mvucm3d" target="_blank" rel="noopener"><span><img src="img/empeiria.png" alt="Empeiria" loading="lazy"></span><em>Empeiria</em></a></div>
+                <div class="node-card"><a href="https://testnet.itrocket.net/prysm/staking/prysmvaloper1krtkk72575yxevwve6ur244y0d860cjgf0evxm" target="_blank" rel="noopener"><span><img src="img/prism.png" alt="Prysm" loading="lazy"></span><em>Prysm</em></a></div>
+                <div class="node-card"><a href="https://exp.utsa.tech/airchains-test/staking/airvaloper1c8g22r2m7e5372mlzhrc9d9yzzt4qmepp8x3k9" target="_blank" rel="noopener"><span><img src="img/air.png" alt="Airchains" loading="lazy"></span><em>Airchains</em></a></div>
+                <div class="node-card"><a href="https://alps.dill.xyz/validators?pubkey=0x87ff74b617421885df4a3a03fbbd5d936b566ee3c9e56184218ebf99484657deb0814662c0a6824a9071263fb95d470c" target="_blank" rel="noopener"><span><img src="img/dill.png" alt="Dill" loading="lazy"></span><em>Dill</em></a></div>
+                <div class="node-card"><a href="http://account.network3.ai:8080/main?o=65.108.10.239%3A8080" target="_blank" rel="noopener"><span><img src="img/network3.png" alt="Network3" loading="lazy"></span><em>Network3</em></a></div>
+                <div class="node-card"><a href="https://mempool.space/testnet/address/n1QD4g5HiqfE9SE6WuGJ7qQTsJRvykXa8T" target="_blank" rel="noopener"><span><img src="img/hemi.png" alt="Hemi" loading="lazy"></span><em>Hemi</em></a></div>
+                <div class="node-card"><a href="https://testnet.storyscan.app/validators/storyvaloper1x9c7xr8x4du2e926cgztthaq8cydnvcvvypesa?tab=profile" target="_blank" rel="noopener"><span><img src="img/story.png" alt="Story" loading="lazy"></span><em>Story</em></a></div>
+                <div class="node-card"><a href="https://testnet.itrocket.net/allora/staking/allovaloper1xpf9zycphjv9uuwma96rt4v835uz0qqln4lnh7" target="_blank" rel="noopener"><span><img src="img/allora.png" alt="Allora" loading="lazy"></span><em>Allora</em></a></div>
+                <div class="node-card"><span><img src="img/nillion.png" alt="Nillion" loading="lazy"></span><em>Nillion</em></div>
+                <div class="node-card"><span><img src="img/chasm.png" alt="Chasm" loading="lazy"></span><em>Chasm</em></div>
+                <div class="node-card"><span><img src="img/vana.png" alt="Vana" loading="lazy"></span><em>Vana</em></div>
+                <div class="node-card"><span><img src="img/nubit.png" alt="Nubit" loading="lazy"></span><em>Nubit</em></div>
+                <div class="node-card"><span><img src="img/redbelly.png" alt="Redbelly" loading="lazy"></span><em>Redbelly</em></div>
+                <div class="node-card"><span><img src="img/shardeum.png" alt="Shardeum" loading="lazy"></span><em>Shardeum</em></div>
+            </div>
+        </section>
+
+        <!-- ARCHIVE -->
+        <section class="container section" id="archive">
+            <h2 class="section-title">Archive <span class="grad">nodes</span></h2>
+            <div class="node-grid">
+                <div class="node-card"><a href="https://explorer.stavr.tech/Quasar-Mainnet/staking/quasarvaloper1zsm0tcqdam089vvmxm7f79c5d2qerahh0hz6a2" target="_blank" rel="noopener"><span><img src="img/quasar1.png" alt="Quasar" loading="lazy"></span><em>Quasar</em></a></div>
+                <div class="node-card"><a href="https://explorer.stavr.tech/composable-mainnet/staking/centaurivaloper1tla2k2zrp3wesnf5ka7t2hjwwakm54psn6hqfz" target="_blank" rel="noopener"><span><img src="img/Composable.png" alt="Composable" loading="lazy"></span><em>Composable</em></a></div>
+                <div class="node-card"><span><img src="img/NIBIR.png" alt="Nibiru" loading="lazy"></span><em>Nibiru</em></div>
+                <div class="node-card"><span><img src="img/bundlr.png" alt="Bundlr" loading="lazy"></span><em>Bundlr</em></div>
+                <div class="node-card"><span><img src="img/massa.png" alt="Massa" loading="lazy"></span><em>Massa</em></div>
+                <div class="node-card"><span><img src="img/espresso.png" alt="Espresso" loading="lazy"></span><em>Espresso</em></div>
+                <div class="node-card"><span><img src="img/ironfish.png" alt="Iron Fish" loading="lazy"></span><em>Iron Fish</em></div>
+                <div class="node-card"><span><img src="img/defund.png" alt="DeFund" loading="lazy"></span><em>DeFund</em></div>
+                <div class="node-card"><span><img src="img/noria.png" alt="Noria" loading="lazy"></span><em>Noria</em></div>
+                <div class="node-card"><span><img src="img/celestia.png" alt="Celestia" loading="lazy"></span><em>Celestia</em></div>
+                <div class="node-card"><span><img src="img/subspace.png" alt="Subspace" loading="lazy"></span><em>Subspace</em></div>
+                <div class="node-card"><span><img src="img/Sao.png" alt="Sao" loading="lazy"></span><em>Sao</em></div>
+                <div class="node-card"><span><img src="img/kyve.png" alt="KYVE" loading="lazy"></span><em>KYVE</em></div>
+                <div class="node-card"><span><img src="img/forta.png" alt="Forta" loading="lazy"></span><em>Forta</em></div>
+                <div class="node-card"><span><img src="img/teritori.png" alt="Teritori" loading="lazy"></span><em>Teritori</em></div>
+                <div class="node-card"><span><img src="img/stratos.png" alt="Stratos" loading="lazy"></span><em>Stratos</em></div>
+                <div class="node-card"><span><img src="img/ssv.png" alt="SSV" loading="lazy"></span><em>SSV</em></div>
+                <div class="node-card"><span><img src="img/eywa.png" alt="Eywa" loading="lazy"></span><em>Eywa</em></div>
+                <div class="node-card"><span><img src="img/entrypoint.png" alt="Entrypoint" loading="lazy"></span><em>Entrypoint</em></div>
+                <div class="node-card"><span><img src="img/eigen.png" alt="EigenLayer" loading="lazy"></span><em>EigenLayer</em></div>
+                <div class="node-card"><span><img src="img/cascadia.png" alt="Cascadia" loading="lazy"></span><em>Cascadia</em></div>
+                <div class="node-card"><span><img src="img/LAVA.png" alt="Lava" loading="lazy"></span><em>Lava</em></div>
+                <div class="node-card"><span><img src="img/avail.png" alt="Avail" loading="lazy"></span><em>Avail</em></div>
+                <div class="node-card"><span><img src="img/powerpool.png" alt="Powerpool" loading="lazy"></span><em>Powerpool</em></div>
+                <div class="node-card"><span><img src="img/andromeda.png" alt="Andromeda" loading="lazy"></span><em>Andromeda</em></div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact-section" id="contact">
+            <div class="container contact-inner">
+                <h2 class="section-title">Let's <span class="grad">talk</span></h2>
+                <p class="contact-lead">Interested in a snapshot service, an explorer or a bot for your network?
+                    Or a collaboration in validation? Reach out anywhere below.</p>
+                <div class="contact-grid">
+                    <a class="contact-card" href="https://t.me/tarabukinivan" target="_blank" rel="noopener">
+                        <b>Telegram</b><span>@tarabukinivan</span>
+                    </a>
+                    <a class="contact-card" href="https://twitter.com/qjtze9GsNnNwHjO" target="_blank" rel="noopener">
+                        <b>Twitter / X</b><span>@qjtze9GsNnNwHjO</span>
+                    </a>
+                    <a class="contact-card" href="https://tarabukinivan.medium.com/" target="_blank" rel="noopener">
+                        <b>Medium</b><span>tarabukinivan.medium.com</span>
+                    </a>
+                    <a class="contact-card" href="https://github.com/tarabukinivan" target="_blank" rel="noopener">
+                        <b>GitHub</b><span>github.com/tarabukinivan</span>
+                    </a>
+                    <div class="contact-card"><b>Discord</b><span>mr#9464</span></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <span>© <span id="year"></span> Ivan Tarabukin — Validator &amp; Node Operator</span>
+            <span class="footer-links"><a href="https://github.com/tarabukinivan/personal" target="_blank" rel="noopener">Source</a></span>
         </div>
-    </div>
-    <div class="container testnet about">
-        <h2>Mainnet<a name="mainet"></a></h2>
-        <div class="row"> 
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><a href="https://explorer.stavr.tech/Gitopia-M/staking/gitopiavaloper1ls7r9q6afdffj04a6j8e8lle04tr8yz9x9lr7t" target="_blank"><span><img src="img/gitopia.png" alt=""></span></a></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><a href="https://haqq.explorers.guru/validator/haqqvaloper1xwpeshg6v7fdg55evd9pzlay22a407dnxaat00" target="_blank"><span><img src="img/HAQQ.png" alt=""></span></a></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><a href="https://explorer.stavr.tech/Entangle-Mainnet/staking/entvaloper1ckwptw2zq6p0w80jl2tjzlwf2d55j3586ggt7z" target="_blank"><span><img src="img/Entangle.png" alt=""></span></a></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><a href="https://explorer.stavr.tech/Arkh-Mainnet/staking/arkhvaloper1a5225npq48qd64ahtl7xtzunru54w8zjraqnks" target="_blank"><span><img src="img/arkh.png" alt=""></span></a></div>            
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><a href="https://explorer.stavr.tech/Sge-Mainnet/staking/sgevaloper1m8mhgf0x5kt4hn80dr2vxta0j8u082gawnt2cx" target="_blank"><span><img src="img/sge.png" alt=""></span></a></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><a href="https://ping.blockxnet.com/blockx/staking/blockxvaloper1lq50d07fwv9xwr80agj7t9juul2vxdtz9wte72" target="_blank"><span><img src="img/blockX.png" alt=""></span></a></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><a href="https://voirewards.com/wallet/QS2HU3VDOZYJUQVWAAQF2MICRZ4QPRI6IG3AQYP2IHMPHR2LGOJBQIZSEI" target="_blank"><span><img src="img/voi.png" alt=""></span></a></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><a href="https://massexplo.io/address/AU12LNmP5socTMuDeZjoqfH1dX7go1EoQhLsXTnecWpJXQKnEGxoN" target="_blank"><span><img src="img/massa.png" alt=""></span></a></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><a href="https://nodes.sanr.network/" target="_blank"><span><img src="img/santiment.png" alt=""></span></a></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><span><img src="img/nym.png" alt=""></span></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><span><img src="img/humanode.png" alt=""></span></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><span><img src="img/minim.png" alt=""></span></div>
-        </div>
-        <h2>Active testnet<a name="testnet"></a></h2>
-        <div class="row">
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><a href="https://explorer.stavr.tech/Ojo-Devnet/staking/ojovaloper1grg7z678w6lwh9s30l8z07j0u0xuckrhmqthxx" target="_blank"><span><img src="img/ojo.png" alt=""></span></a></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><a href="http://65.108.10.239:3000/d/af04c037-bd8f-484a-b93e-0cb4b7d3b026/hubble-dashboard?orgId=1&refresh=30s" target="_blank"><span><img src="img/farcaster.png" alt=""></span></a></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><a href="https://exp.utsa.tech/empeiria-test/staking/empevaloper1ggpm445ypks9njzuqqzz66kqh6hr9a8mvucm3d" target="_blank"><span><img src="img/empeiria.png" alt=""></span></a></div>
-            
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><a href="https://testnet.itrocket.net/prysm/staking/prysmvaloper1krtkk72575yxevwve6ur244y0d860cjgf0evxm" target="_blank"><span><img src="img/prism.png" alt=""></span></a></div>
-            
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><a href="https://exp.utsa.tech/airchains-test/staking/airvaloper1c8g22r2m7e5372mlzhrc9d9yzzt4qmepp8x3k9" target="_blank"><span><img src="img/air.png" alt=""></span></a></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><a href="https://alps.dill.xyz/validators?pubkey=0x87ff74b617421885df4a3a03fbbd5d936b566ee3c9e56184218ebf99484657deb0814662c0a6824a9071263fb95d470c" target="_blank"><span><img src="img/dill.png" alt=""></span></a></div>
-            
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><a href="http://account.network3.ai:8080/main?o=65.108.10.239%3A8080" target="_blank"><span><img src="img/network3.png" alt=""></span></a></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><a href="https://mempool.space/testnet/address/n1QD4g5HiqfE9SE6WuGJ7qQTsJRvykXa8T" target="_blank"><span><img src="img/hemi.png" alt=""></span></a></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><a href="https://testnet.storyscan.app/validators/storyvaloper1x9c7xr8x4du2e926cgztthaq8cydnvcvvypesa?tab=profile" target="_blank"><span><img src="img/story.png" alt=""></span></a></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><a href="https://testnet.itrocket.net/allora/staking/allovaloper1xpf9zycphjv9uuwma96rt4v835uz0qqln4lnh7" target="_blank"><span><img src="img/allora.png" alt=""></span></a></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><span><img src="img/nillion.png" alt=""></span></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><span><img src="img/chasm.png" alt=""></span></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><span><img src="img/vana.png" alt=""></span></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><span><img src="img/nubit.png" alt=""></span></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><span><img src="img/redbelly.png" alt=""></span></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><span><img src="img/shardeum.png" alt=""></span></div>
-            
-        </div>
-        <h2>Archive nodes<a name="testnetold"></a></h2>
-        <div class="row">
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><a href="https://explorer.stavr.tech/Quasar-Mainnet/staking/quasarvaloper1zsm0tcqdam089vvmxm7f79c5d2qerahh0hz6a2" target="_blank"><span><img src="img/quasar1.png" alt=""></span></a></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><a href="https://explorer.stavr.tech/composable-mainnet/staking/centaurivaloper1tla2k2zrp3wesnf5ka7t2hjwwakm54psn6hqfz" target="_blank"><span><img src="img/Composable.png" alt=""></span></a></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><span><img src="img/NIBIR.png" alt=""></span></div>            
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><span><img src="img/bundlr.png" alt=""></span></div>                       
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><span><img src="img/massa.png" alt=""></span></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><span><img src="img/espresso.png" alt=""></span></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><span><img src="img/ironfish.png" alt=""></span></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><span><img src="img/defund.png" alt=""></span></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><span><img src="img/noria.png" alt=""></span></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><span><img src="img/celestia.png" alt=""></span></div>        
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><span><img src="img/subspace.png" alt=""></span></div> 
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><span><img src="img/Sao.png" alt=""></span></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><span><img src="img/kyve.png" alt=""></span></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><span><img src="img/forta.png" alt=""></span></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><span><img src="img/teritori.png" alt=""></span></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><span><img src="img/stratos.png" alt=""></span></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><span><img src="img/ssv.png" alt=""></span></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><span><img src="img/eywa.png" alt=""></span></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><span><img src="img/entrypoint.png" alt=""></span></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><span><img src="img/eigen.png" alt=""></span></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><span><img src="img/cascadia.png" alt=""></span></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><span><img src="img/LAVA.png" alt=""></span></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><span><img src="img/avail.png" alt=""></span></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><span><img src="img/powerpool.png" alt=""></span></div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 brd text-center"><span><img src="img/andromeda.png" alt=""></span></div>
-        </div>
-    </div>
-    
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
